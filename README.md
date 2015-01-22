@@ -14,7 +14,8 @@ brew install <formula>
 
 Choose one of the below programs as your `<formula>`:
 
-TBD
+- [`npshell`](https://github.com/joelpurra/npshell)
+
 
 Thanks for using my software! Spread the word =)
 
