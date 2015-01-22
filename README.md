@@ -14,6 +14,7 @@ brew install <formula>
 
 Choose one of the below programs as your `<formula>`:
 
+- [`jqnpm`](https://github.com/joelpurra/jqnpm)
 - [`npshell`](https://github.com/joelpurra/npshell)
 - [`shell-keystroke-animator`](https://github.com/joelpurra/shell-keystroke-animator)
 
