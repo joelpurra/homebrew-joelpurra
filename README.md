@@ -15,6 +15,7 @@ brew install <formula>
 Choose one of the below programs as your `<formula>`:
 
 - [`npshell`](https://github.com/joelpurra/npshell)
+- [`shell-keystroke-animator`](https://github.com/joelpurra/shell-keystroke-animator)
 
 
 Thanks for using my software! Spread the word =)
