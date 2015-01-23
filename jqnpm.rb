@@ -8,6 +8,7 @@ class Jqnpm < Formula
     depends_on "bash"
     depends_on "jq"
     depends_on "git"
+    depends_on "shunit2"
   end
 
   def install
