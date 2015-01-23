@@ -11,7 +11,7 @@ class Jqnpm < Formula
   end
 
   def install
-    prefix.install Dir["src"]
+    prefix.install "src"
     bin.install_symlink prefix/"src/jqnpm"
   end
 
@@ -19,6 +19,6 @@ class Jqnpm < Formula
     assert_match /install/, shell_output("#{bin}/jqnpm help")
 
     # The required jq version has not been released at the time of writing.
-    system "jq", "--null-input", "--join-output", "-L", '.', '"x"'
+    system "jq", "--null-input", "--join-output", "-L", ".", '"x"'
   end
 end
