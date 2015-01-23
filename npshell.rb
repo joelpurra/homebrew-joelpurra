@@ -1,8 +1,7 @@
 class Npshell < Formula
   homepage "https://github.com/joelpurra/npshell"
   head "https://github.com/joelpurra/npshell.git"
-  url "https://github.com/joelpurra/npshell/archive/v1.0.1.tar.gz"
-  sha256 "b43ac195767521ed4d40c53eb328e3297c688ab0a5b05173c06e4cc46fbd005b"
+  url "https://github.com/joelpurra/npshell.git", :tag => "v1.0.1"
 
   depends_on "bash"
   depends_on "coreutils"
