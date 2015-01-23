@@ -15,8 +15,12 @@ class ShellKeystrokeAnimator < Formula
   test do
     # These tests run Mac OS X automation tools to take screenshots, and
     # aren't expected to actually work on a build server.
-    # TODO: is there a `pipe_input`, because splitting these commands up with the echo pipe doesn't work.
-    system "echo 'true' | #{bin}/keystroke-animator 0 0.01 0.01"
+    system "echo 'true' |  "
+    require "open3"
+    Open3.popen3("#{bin}/keystroke-animator", "0", "0.01", "0.01", "0.01") do |stdin, stdout, _|
+      stdin.write("true")
+      stdin.close
+    end
     assert (testpath/"output.gif").exist?,
             "output.gif was not created."
   end
