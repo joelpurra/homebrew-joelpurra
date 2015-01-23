@@ -5,6 +5,7 @@ class Npshell < Formula
   sha256 "6594a8b365562bbee83555bd953b703fbcfe3a571013dc0410ad95bba21c54ee"
 
   depends_on "bash"
+  depends_on "coreutils"
   depends_on "fswatch"
 
   def install
