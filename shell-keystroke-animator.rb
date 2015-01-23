@@ -1,8 +1,8 @@
 class ShellKeystrokeAnimator < Formula
   homepage "https://github.com/joelpurra/shell-keystroke-animator"
-  url "https://github.com/joelpurra/shell-keystroke-animator/archive/v1.0.0.tar.gz"
+  url "https://github.com/joelpurra/shell-keystroke-animator/archive/v1.1.0.tar.gz"
   head "https://github.com/joelpurra/shell-keystroke-animator.git"
-  sha256 "b0c86a3d87c30afd45e218dd53fee0af899049406dae77d31635bc803a8d9cab"
+  sha256 "6efec10f007009e6f4b6dd8eb0ff0a2df763dd37d33085c0586dd66f3cb5b888"
 
   class Foo < Formula
     depends_on "bash"
