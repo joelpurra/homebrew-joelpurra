@@ -1,8 +1,8 @@
 class Jqnpm < Formula
   homepage "https://github.com/joelpurra/jqnpm"
   head "https://github.com/joelpurra/jqnpm.git"
-  url "https://github.com/joelpurra/jqnpm/archive/v0.5.4.tar.gz"
-  sha256 "4e88984f09dedac2e41ee3d7b2a5fb325549a54a07fd863f970f53bff28578cb"
+  url "https://github.com/joelpurra/jqnpm/archive/v0.5.5.tar.gz"
+  sha256 "327b3b6605cab0f8340bcc1f1734fbdb78aa3c10bceaac810631d9691abd7ffe"
 
   class Foo < Formula
     depends_on "bash"
