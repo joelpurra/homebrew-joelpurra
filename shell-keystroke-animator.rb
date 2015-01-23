@@ -4,10 +4,8 @@ class ShellKeystrokeAnimator < Formula
   url "https://github.com/joelpurra/shell-keystroke-animator/archive/v1.1.0.tar.gz"
   sha256 "6efec10f007009e6f4b6dd8eb0ff0a2df763dd37d33085c0586dd66f3cb5b888"
 
-  class Foo < Formula
-    depends_on "bash"
-    depends_on "imagemagick"
-  end
+  depends_on "bash"
+  depends_on "imagemagick"
 
   def install
     prefix.install "src"

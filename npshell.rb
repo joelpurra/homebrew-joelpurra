@@ -4,10 +4,8 @@ class Npshell < Formula
   url "https://github.com/joelpurra/npshell/archive/v1.0.0.tar.gz"
   sha256 "6594a8b365562bbee83555bd953b703fbcfe3a571013dc0410ad95bba21c54ee"
 
-  class Foo < Formula
-    depends_on "bash"
-    depends_on "fswatch"
-  end
+  depends_on "bash"
+  depends_on "fswatch"
 
   def install
     prefix.install "src"
