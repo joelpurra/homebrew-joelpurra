@@ -15,8 +15,5 @@ class Jqnpm < Formula
 
   test do
     assert_match /install/, shell_output("#{bin}/jqnpm help")
-
-    # The required jq version has not been released at the time of writing.
-    system "jq", "--null-input", "--join-output", "-L", ".", '"x"'
   end
 end
