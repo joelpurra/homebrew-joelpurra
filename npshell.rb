@@ -1,7 +1,7 @@
 class Npshell < Formula
   homepage "https://github.com/joelpurra/npshell"
   head "https://github.com/joelpurra/npshell.git"
-  url "https://github.com/joelpurra/npshell.git", :tag => "v1.1.2"
+  url "https://github.com/joelpurra/npshell.git", :tag => "v1.1.4"
 
   depends_on "bash"
   depends_on "coreutils"
