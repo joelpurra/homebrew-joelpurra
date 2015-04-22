@@ -18,7 +18,7 @@ brew install npshell
 brew install shell-keystroke-animator
 
 # Install one or more forks:
-brew install joelpurra/joelpurra/gitslave
+brew install --devel joelpurra/joelpurra/gitslave
 ```
 
 See
