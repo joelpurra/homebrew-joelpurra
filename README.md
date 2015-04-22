@@ -18,6 +18,11 @@ Choose one of the below programs as your `<formula>`:
 - [`npshell`](https://github.com/joelpurra/npshell)
 - [`shell-keystroke-animator`](https://github.com/joelpurra/shell-keystroke-animator)
 
+Or choose one of the forks I maintain:
+
+- [`joelpurra/joelpurra/gitslave`](https://github.com/joelpurra/gitslave) forked from [gitslave](http://gitslave.sourceforge.net/)
+
+
 
 Thanks for using my software! Spread the word =)
 
