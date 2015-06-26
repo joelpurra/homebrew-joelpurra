@@ -6,8 +6,8 @@ class Npshell < Formula
   depends_on "bash"
   depends_on "coreutils"
   depends_on "fswatch"
-  option "with-terminal-notifier", "Enables OS X notification support."
-  depends_on "terminal-notifier" => :optional
+  option "without-terminal-notifier", "Disables OS X notification dependencies."
+  depends_on "terminal-notifier" => :recommended
 
   if build.with? "terminal-notifier"
     depends_on "id3v2"
