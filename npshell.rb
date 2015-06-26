@@ -1,7 +1,7 @@
 class Npshell < Formula
   homepage "https://github.com/joelpurra/npshell"
   head "https://github.com/joelpurra/npshell.git"
-  url "https://github.com/joelpurra/npshell.git", :tag => "v1.2.0"
+  url "https://github.com/joelpurra/npshell.git", :tag => "v1.3.0"
 
   depends_on "bash"
   depends_on "coreutils"
@@ -10,6 +10,8 @@ class Npshell < Formula
   depends_on "terminal-notifier" => :optional
 
   if build.with? "terminal-notifier"
+    depends_on "id3v2"
+
     def caveats; <<-EOS.undent
       Notifications are not autostarted by brew; to do so
       add the following line to your ~/.bash_profile:
