@@ -1,7 +1,7 @@
 class Jqnpm < Formula
   homepage "https://github.com/joelpurra/jqnpm"
   head "https://github.com/joelpurra/jqnpm.git"
-  url "https://github.com/joelpurra/jqnpm.git", :tag => "v0.5.5"
+  url "https://github.com/joelpurra/jqnpm.git", :tag => "v0.5.6"
 
   depends_on "bash"
   depends_on "jq"
