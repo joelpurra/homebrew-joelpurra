@@ -4,8 +4,15 @@ class Jqnpm < Formula
   url "https://github.com/joelpurra/jqnpm.git", :tag => "v0.5.7"
   head "https://github.com/joelpurra/jqnpm.git"
 
+  devel do
+    url "https://github.com/joelpurra/jqnpm.git", :branch => "jq-package-root"
+    version "v0.5.7-jq-package-root"
+
+    depends_on "joelpurra/joelpurra/jq" => :devel
+  end
+
   depends_on "bash"
-  depends_on "jq"
+  depends_on "jq" unless build.devel?
   depends_on "shunit2"
 
   def install
