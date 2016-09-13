@@ -5,9 +5,9 @@ class Gitslave < Formula
   head 'https://github.com/joelpurra/gitslave.git'
 
   devel do
-	  url 'https://github.com/joelpurra/gitslave/archive/v2.0.2-joelpurra-48-g733e659.tar.gz'
-	  sha256 'bd948e8eccd0ea6e8a5da183b75174248ab777cafb8cf98f5ee5fc01a22f2d6c'
-	  version 'v2.0.2-joelpurra-48-g733e659'
+    version 'v2.0.2-joelpurra-51-g203467d'
+    url 'https://github.com/joelpurra/gitslave/archive/v2.0.2-joelpurra-51-g203467d.tar.gz'
+    sha256 '21ba3d4d8d9a70b4d5c09f89db3881dbc05b3db9de2b7a512f233a6aff80a464'
   end
 
   def install
