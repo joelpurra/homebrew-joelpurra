@@ -1,12 +1,14 @@
 class Npshell < Formula
+  desc "Command-line music queue manager"
   homepage "https://github.com/joelpurra/npshell"
-  head "https://github.com/joelpurra/npshell.git"
   url "https://github.com/joelpurra/npshell.git", :tag => "v1.4.0"
+  head "https://github.com/joelpurra/npshell.git"
+
+  option "without-terminal-notifier", "Disables OS X notification dependencies."
 
   depends_on "bash"
   depends_on "coreutils"
   depends_on "fswatch"
-  option "without-terminal-notifier", "Disables OS X notification dependencies."
   depends_on "terminal-notifier" => :recommended
 
   if build.with? "terminal-notifier"
@@ -36,14 +38,7 @@ class Npshell < Formula
     bin.install_symlink prefix/"src/np"
   end
 
-  test do
-    system "#{bin}/np", "index"
-    assert (testpath/".np.cache~").exist?,
-            "npshell index file not created."
-  end
-
   plist_options :startup => false, :manual => "np daemon"
-
   def plist; <<-EOS.undent
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-/Apple/DTD PLIST 1.0/EN" "http:/www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -67,5 +62,11 @@ class Npshell < Formula
       </dict>
     </plist>
     EOS
+  end
+
+  test do
+    system "#{bin}/np", "index"
+    assert_predicate (testpath/".np.cache~"), :exist?,
+            "npshell index file not created."
   end
 end
