@@ -1,7 +1,7 @@
 class Npshell < Formula
   desc "Command-line music queue manager"
   homepage "https://github.com/joelpurra/npshell"
-  url "https://github.com/joelpurra/npshell.git", :tag => "v1.4.0"
+  url "https://github.com/joelpurra/npshell.git", :tag => "v1.4.1"
   head "https://github.com/joelpurra/npshell.git"
 
   option "without-terminal-notifier", "Disables OS X notification dependencies."
