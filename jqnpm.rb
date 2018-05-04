@@ -6,7 +6,7 @@ class Jqnpm < Formula
 
   devel do
     url "https://github.com/joelpurra/jqnpm.git", :branch => "jq-package-root"
-    version "v0.5.7-jq-package-root"
+    version "0.5.7-jq-package-root"
 
     depends_on "joelpurra/joelpurra/jq" => :devel
   end
