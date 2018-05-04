@@ -14,7 +14,7 @@ class Npshell < Formula
   if build.with? "terminal-notifier"
     depends_on "id3v2"
 
-    def caveats; <<-EOS.undent
+    def caveats; <<-EOS
       Notifications are not autostarted by brew; to do so
       add the following line to your ~/.bash_profile:
           np notify --is-running || ( np notify & )
@@ -25,7 +25,7 @@ class Npshell < Formula
       EOS
     end
   else
-    def caveats; <<-EOS.undent
+    def caveats; <<-EOS
       The daemon can also run when you start your terminal.
       Add the following line to your ~/.bash_profile:
           np daemon --is-running || ( np daemon & )
@@ -39,7 +39,7 @@ class Npshell < Formula
   end
 
   plist_options :startup => false, :manual => "np daemon"
-  def plist; <<-EOS.undent
+  def plist; <<-EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-/Apple/DTD PLIST 1.0/EN" "http:/www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
