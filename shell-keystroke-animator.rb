@@ -1,7 +1,8 @@
 class ShellKeystrokeAnimator < Formula
+  desc "Simulate stroking keyboard keys to create a .gif."
   homepage "https://github.com/joelpurra/shell-keystroke-animator"
-  head "https://github.com/joelpurra/shell-keystroke-animator.git"
   url "https://github.com/joelpurra/shell-keystroke-animator.git", :tag => "v1.1.0"
+  head "https://github.com/joelpurra/shell-keystroke-animator.git"
 
   depends_on "bash"
   depends_on "imagemagick"
