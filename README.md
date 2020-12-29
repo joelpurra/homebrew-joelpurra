@@ -13,13 +13,13 @@ Enter this in your terminal:
 brew tap joelpurra/joelpurra
 
 # Install one or more programs:
-brew install jqnpm
-brew install npshell
-brew install shell-keystroke-animator
+brew install joelpurra/joelpurra/jqnpm
+brew install joelpurra/joelpurra/npshell
+brew install joelpurra/joelpurra/shell-keystroke-animator
 
 # Install one or more forks:
-brew install --devel joelpurra/joelpurra/jq
-brew install --devel joelpurra/joelpurra/gitslave
+brew install --HEAD joelpurra/joelpurra/jq
+brew install --HEAD joelpurra/joelpurra/gitslave
 ```
 
 ## Projects and forks

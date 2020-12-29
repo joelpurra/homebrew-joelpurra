@@ -1,18 +1,22 @@
+# typed: false
+# frozen_string_literal: true
+
 class Jqnpm < Formula
-  desc "Package manager built for the command-line JSON processor jq."
+  desc "Package manager built for the command-line JSON processor jq"
   homepage "https://github.com/joelpurra/jqnpm"
-  url "https://github.com/joelpurra/jqnpm.git", :tag => "v0.5.7"
-  head "https://github.com/joelpurra/jqnpm.git"
+  url "https://github.com/joelpurra/jqnpm.git", tag: "v0.5.7"
+  license any_of: ["MIT", "BSD-2-Clause", "GPL-3.0-or-later"]
 
-  devel do
-    url "https://github.com/joelpurra/jqnpm.git", :branch => "jq-package-root"
-    version "0.5.7-jq-package-root"
+  head do
+    url "https://github.com/joelpurra/jqnpm.git",
+        branch: "jq-package-root"
+    version "v0.5.7-jq-package-root"
 
-    depends_on "joelpurra/joelpurra/jq" => :devel
+    depends_on "joelpurra/joelpurra/jq" => :head
   end
 
   depends_on "bash"
-  depends_on "jq" unless build.devel?
+  depends_on "jq" unless build.head?
   depends_on "shunit2"
 
   def install
@@ -21,6 +25,6 @@ class Jqnpm < Formula
   end
 
   test do
-    assert_match /install/, shell_output("#{bin}/jqnpm help")
+    assert_match(/install/, shell_output("#{bin}/jqnpm help"))
   end
 end

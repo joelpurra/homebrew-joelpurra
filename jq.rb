@@ -1,11 +1,16 @@
+# typed: false
+# frozen_string_literal: true
+
 class Jq < Formula
   # This file has been based on the original `jq.rb` formula. Make sure to keep it updated.
   # https://github.com/Homebrew/homebrew-core/blob/master/Formula/jq.rb
-  desc "jqnpm's version of jq"
+  desc "Jqnpm's version of jq"
   homepage "https://github.com/joelpurra/jqnpm"
+  license "MIT"
 
-  devel do
-    url "https://github.com/joelpurra/jq.git", :branch => "package-root"
+  head do
+    url "https://github.com/joelpurra/jq.git",
+        branch: "package-root"
     version "1.5-jqnpm-package-root"
 
     depends_on "autoconf" => :build
@@ -17,10 +22,11 @@ class Jq < Formula
 
   def install
     system "autoreconf", "-iv" unless build.stable?
-    system "./configure", "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--disable-maintainer-mode",
-                          "--prefix=#{prefix}"
+    system "./configure",
+           "--disable-dependency-tracking",
+           "--disable-silent-rules",
+           "--disable-maintainer-mode",
+           "--prefix=#{prefix}"
     system "make", "install"
   end
 
