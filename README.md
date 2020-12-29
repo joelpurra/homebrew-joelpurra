@@ -36,7 +36,7 @@ brew install joelpurra/joelpurra/shell-keystroke-animator
 A [`gits` git superproject/gitslave](https://gitslave.sourceforge.io/) fork. It picks up where the original maintainers left off, applying some community-provided patches.
 
 ```bash
-brew install --HEAD joelpurra/joelpurra/gitslave
+brew install joelpurra/joelpurra/gitslave
 ```
 
 ---
