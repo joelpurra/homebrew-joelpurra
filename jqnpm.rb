@@ -11,12 +11,11 @@ class Jqnpm < Formula
     url "https://github.com/joelpurra/jqnpm.git",
         branch: "jq-package-root"
     version "v0.5.7-jq-package-root"
-
-    depends_on "joelpurra/joelpurra/jq" => :head
   end
 
   depends_on "bash"
-  depends_on "jq" unless build.head?
+  # NOTE: opting to only offer the joelpurra/joelpurra/jq fork.
+  depends_on "joelpurra/joelpurra/jq"
   depends_on "shunit2"
 
   def install

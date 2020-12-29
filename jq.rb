@@ -2,23 +2,20 @@
 # frozen_string_literal: true
 
 class Jq < Formula
-  # This file has been based on the original `jq.rb` formula. Make sure to keep it updated.
+  # Based on the original jq.rb formula.
   # https://github.com/Homebrew/homebrew-core/blob/master/Formula/jq.rb
   desc "Jqnpm's version of jq"
   homepage "https://github.com/joelpurra/jqnpm"
+  # NOTE: opting to only offer the fork branch.
+  url "https://github.com/joelpurra/jq.git",
+      branch: "package-root"
+  version "1.5-jqnpm-package-root"
   license "MIT"
 
-  head do
-    url "https://github.com/joelpurra/jq.git",
-        branch: "package-root"
-    version "1.5-jqnpm-package-root"
-
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "libtool" => :build
-  end
-
-  depends_on "oniguruma" # jq depends > 1.5
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "libtool" => :build
+  depends_on "oniguruma"
 
   def install
     system "autoreconf", "-iv" unless build.stable?
